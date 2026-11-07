@@ -1,0 +1,142 @@
+# ==============================================================================
+# AI-Powered Smart Asset Reliability & Maintenance Suite - Git Ignore Rules
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. SECRET FILES & ENVIRONMENT VARIABLES (CRITICAL)
+# ------------------------------------------------------------------------------
+# All environment variable files across all directories
+.env
+.env.*
+*.env
+*.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+backend/.env
+backend/.env.*
+frontend/.env
+frontend/.env.*
+
+# Explicitly whitelist example templates for developer onboarding
+!.env.example
+!*.env.example
+!backend/.env.example
+!frontend/.env.example
+
+# Cryptographic Keys, Certificates & Security Credentials
+*.pem
+*.key
+*.pkcs12
+*.pfx
+*.p12
+*.crt
+*.cert
+*.der
+*.keystore
+*.jks
+id_rsa
+id_rsa.pub
+id_ecdsa
+id_ecdsa.pub
+id_ed25519
+id_ed25519.pub
+
+# Service Account Keys, Cloud Auth & API Token Files
+token.json
+tokens.json
+credentials.json
+client_secret*.json
+serviceAccountKey*.json
+google-credentials*.json
+secrets.json
+secret.json
+*.kdbx
+
+# ------------------------------------------------------------------------------
+# 2. DEPENDENCIES & PACKAGE MANAGERS
+# ------------------------------------------------------------------------------
+node_modules/
+*/node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# ------------------------------------------------------------------------------
+# 3. BUILD OUTPUTS & DISTRIBUTION ARTIFACTS
+# ------------------------------------------------------------------------------
+dist/
+*/dist/
+**/dist/
+build/
+*/build/
+**/build/
+out/
+.next/
+.nuxt/
+.vite/
+*.tsbuildinfo
+
+# ------------------------------------------------------------------------------
+# 4. LOGS, PROCESS RECORDINGS & RUNTIME STORAGE
+# ------------------------------------------------------------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ------------------------------------------------------------------------------
+# 5. TESTING, COVERAGE & CACHE
+# ------------------------------------------------------------------------------
+coverage/
+.nyc_output/
+.turbo/
+.cache/
+.parcel-cache/
+tmp/
+temp/
+scratch/
+
+# ------------------------------------------------------------------------------
+# 6. LOCAL DATABASES & STORAGE DUMPS
+# ------------------------------------------------------------------------------
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.dump
+dump.rdb
+
+# ------------------------------------------------------------------------------
+# 7. OPERATING SYSTEM & IDE ARTIFACTS
+# ------------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDEs & Editors
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+*.swp
+*.swo
+*~
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
